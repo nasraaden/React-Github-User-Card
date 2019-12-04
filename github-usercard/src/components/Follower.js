@@ -23,10 +23,9 @@ class Follower extends React.Component {
 
     render() {
         return (
-            <div>
-                <h2>Followers:</h2>
+            <div className="followers">
                 {this.state.followers.map(follower => (
-                   <FollowerCard key={follower.id} login={follower.login} url={follower.html_url} img={follower.avatar_url} />
+                <FollowerCard key={follower.id} login={follower.login} url={follower.html_url} img={follower.avatar_url} />
                 ))}
             </div>
         )

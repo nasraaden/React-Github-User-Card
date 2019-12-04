@@ -17,6 +17,7 @@ class User extends React.Component {
                 bio: response.data.bio,
                 location: response.data.location,
                 img: response.data.avatar_url,
+                login: response.data.login
             })
         })
         .catch(err => {
@@ -26,8 +27,8 @@ class User extends React.Component {
     
     render() {
         return (
-            <div>
-                <UserCard key={this.state.id} name={this.state.name} bio={this.state.bio} img={this.state.img} location={this.state.location}/>
+            <div className="user">
+                <UserCard key={this.state.id} name={this.state.name} bio={this.state.bio} img={this.state.img} location={this.state.location} login={this.state.login}/>
             </div>
         )
     }

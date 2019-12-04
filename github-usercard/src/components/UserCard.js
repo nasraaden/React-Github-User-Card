@@ -2,11 +2,12 @@ import React from "react";
 
 const UserCard = props => {
     return (
-        <div>
-            <img src={props.img} />
-            <h2>{props.name}</h2>
+        <div className="user-card">
+            <img src={props.img} alt={props.img}/>
+            <h3>{props.name}</h3>
+            <p>{`Username: ${props.login}`}</p>
             <p>{`Bio: ${props.bio}`}</p>
-            <p>{` Location: ${props.locations}`}</p>
+            <p>{` Location: ${props.location}`}</p>
         </div>
     )
 }
