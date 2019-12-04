@@ -1,32 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap');
 
-/* body{
-  background: whitesmoke;
-} */
+body{
+    background: ghostwhite;
+}
 
 .App {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
 
-img{
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
-
-/* .user{
-  border: 2px solid fuchsia;
-} */
-
 .user-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   background: darkred;
   color: white;
   border-radius: 10px;
   margin: 0 auto;
-  width: 350px;
-  height: 400px;
+  width: 600px;
+  height: 250px;
   padding: 1%;
+}
+
+.user-info{
+  text-align: start;
+  margin-left: 10px;
+}
+
+.user-card img{
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
 }
 
 .followers{
@@ -39,14 +44,45 @@ img{
 .follower-card{
   background: lightgrey;
   border-radius: 10px;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   margin: 2%;
   padding: 1%;
 }
 
+.follower-card:hover{
+  border: 2px solid black;
+}
+
+.follower-card img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
 h2{
   margin-top: 2%;
+}
+
+h3{
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+button{
+  background: darkred;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 1rem;
+  padding: 10px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+button:hover{
+transform: translateY(-1px);
+background: crimson;
 }
 
 

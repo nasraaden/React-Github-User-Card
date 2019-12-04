@@ -17,7 +17,10 @@ class User extends React.Component {
                 bio: response.data.bio,
                 location: response.data.location,
                 img: response.data.avatar_url,
-                login: response.data.login
+                login: response.data.login,
+                followers: response.data.followers,
+                following: response.data.following,
+                repos: response.data.public_repos,
             })
         })
         .catch(err => {
@@ -28,7 +31,7 @@ class User extends React.Component {
     render() {
         return (
             <div className="user">
-                <UserCard key={this.state.id} name={this.state.name} bio={this.state.bio} img={this.state.img} location={this.state.location} login={this.state.login}/>
+                <UserCard key={this.state.id} name={this.state.name} bio={this.state.bio} img={this.state.img} location={this.state.location} login={this.state.login} followers={this.state.followers} following={this.state.following} repos={this.state.repos} />
             </div>
         )
     }
